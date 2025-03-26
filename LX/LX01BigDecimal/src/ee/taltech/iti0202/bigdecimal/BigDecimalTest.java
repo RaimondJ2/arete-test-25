@@ -18,7 +18,7 @@ public class BigDecimalTest {
     @Test(timeOut = 1000)
     public void testIsTwoDecimalsSameWithRounding() {
         BigDecimal dec1 = BigDecimal.valueOf(3.141543);
-        BigDecimal dec2 = BigDecimal.valueOf(3.141541);
+        BigDecimal dec2 = BigDecimal.valueOf(3.541541);
         BigDecimal dec3 = BigDecimal.valueOf(128.492);
         BigDecimal dec4 = BigDecimal.valueOf(128.511);
 
@@ -124,7 +124,8 @@ public class BigDecimalTest {
     @Test(timeOut = 1000)
     public void testFibonacciCalculationCorrect() {
         assertEquals(num.fibonacci(572),
-                new BigInteger("155397926921764129586412153075574099601109247922558905818374286709640260695423396870480843150490968148047148588235083389"));
+                new BigInteger(
+                        "155397926921764129586412153075574099601109247922558905818374286709640260695423396870480843150490968148047148588235083389"));
         assertEquals(num.fibonacci(235), new BigInteger("5789092068864820527338372482892113982249794889765"));
         assertEquals(num.fibonacci(20), BigInteger.valueOf(6765));
         assertEquals(num.fibonacci(10), BigInteger.valueOf(55));
@@ -138,7 +139,8 @@ public class BigDecimalTest {
     @Test(timeOut = 1000)
     public void testLucasCalculationCorrect() {
         assertEquals(num.lucas(762),
-                new BigInteger("1772482150909261266935809714765791508254729174221668720920311171304840749088492994378238885428132998042510078073991707620874171944133780111288137927200206172178"));
+                new BigInteger(
+                        "1772482150909261266935809714765791508254729174221668720920311171304840749088492994378238885428132998042510078073991707620874171944133780111288137927200206172178"));
         assertEquals(num.lucas(154), new BigInteger("152790586683089283455442974745243"));
         assertEquals(num.lucas(28), BigInteger.valueOf(710647));
         assertEquals(num.lucas(13), BigInteger.valueOf(521));
