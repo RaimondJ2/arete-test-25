@@ -17,7 +17,7 @@ public class BigDecimalTest {
 
     @Test(timeOut = 1000)
     public void testIsTwoDecimalsSameWithRounding() {
-        BigDecimal dec1 = BigDecimal.valueOf(3.141543);
+        BigDecimal dec1 = BigDecimal.valueOf(32.141543);
         BigDecimal dec2 = BigDecimal.valueOf(3.671541);
         BigDecimal dec3 = BigDecimal.valueOf(128.492);
         BigDecimal dec4 = BigDecimal.valueOf(128.511);
